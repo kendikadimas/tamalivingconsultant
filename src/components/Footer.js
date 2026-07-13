@@ -26,7 +26,7 @@ export default function Footer() {
                   TAMA LIVING
                 </span>
                 <span className="text-[9px] uppercase tracking-widest text-brand-gold font-medium -mt-1">
-                  Consultant
+                  Construction
                 </span>
               </div>
             </a>

@@ -54,7 +54,7 @@ export default function Navbar() {
                 TAMA LIVING
               </span>
               <span className="text-[9px] uppercase tracking-[0.22em] text-brand-gold font-bold mt-1 leading-none">
-                CONSULTANT
+                CONSTRUCTION
               </span>
             </div>
           </a>

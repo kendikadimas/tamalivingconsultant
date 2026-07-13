@@ -94,7 +94,7 @@ export default function Packages() {
                 TAMA LIVING
               </span>
               <span className="text-[8px] uppercase tracking-[0.22em] text-[#c5a880] font-bold mt-0.5 leading-none">
-                CONSULTANT
+                CONSTRUCTION
               </span>
             </div>
           </div>
