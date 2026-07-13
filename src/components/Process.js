@@ -1,12 +1,14 @@
 "use client";
 
+import Image from "next/image";
+
 export default function Process() {
   const steps = [
     {
       num: "01",
       title: "Konsultasi & Kebutuhan",
       desc: "Kami mendengarkan kebutuhan, preferensi, dan budget Anda untuk memahami visi rumah impian Anda.",
-      image: "https://images.unsplash.com/photo-1560518883-ce09059eeffa?w=400&auto=format&fit=crop&q=80",
+      image: "https://images.unsplash.com/photo-1600880292203-757bb62b4baf?w=600&auto=format&fit=crop&q=80",
       icon: (
         <svg className="w-7 h-7 text-[#c5a880]" fill="none" stroke="currentColor" strokeWidth="1.8" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
           <path strokeLinecap="round" strokeLinejoin="round" d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z" />
@@ -17,7 +19,7 @@ export default function Process() {
       num: "02",
       title: "Desain Konsep",
       desc: "Tim arsitek kami membuat konsep desain terbaik yang sesuai dengan kebutuhan, fungsi, dan gaya hidup Anda.",
-      image: "/basic_house.png",
+      image: "https://images.unsplash.com/photo-1607082348824-0a96f2a4b9da?w=600&auto=format&fit=crop&q=80",
       icon: (
         <svg className="w-7 h-7 text-[#c5a880]" fill="none" stroke="currentColor" strokeWidth="1.8" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
           <path strokeLinecap="round" strokeLinejoin="round" d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6" />
@@ -28,7 +30,7 @@ export default function Process() {
       num: "03",
       title: "Gambar Kerja & RAB",
       desc: "Kami menyusun gambar kerja detail dan RAB yang akurat sebagai acuan pelaksanaan dan kontrol biaya.",
-      image: "https://images.unsplash.com/photo-1504917595217-d4dc5ebe6122?w=400&auto=format&fit=crop&q=80",
+      image: "https://images.unsplash.com/photo-1524758631624-e2822e304c36?w=600&auto=format&fit=crop&q=80",
       icon: (
         <svg className="w-7 h-7 text-[#c5a880]" fill="none" stroke="currentColor" strokeWidth="1.8" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
           <path strokeLinecap="round" strokeLinejoin="round" d="M9 20l-5.447-2.724A1 1 0 013 16.382V5.618a1 1 0 011.447-.894L9 7m0 13l6-3m-6 3V7m6 10l4.553 2.276A1 1 0 0021 18.382V7.618a1 1 0 00-.553-.894L15 4m0 13V4m0 0L9 7" />
@@ -39,7 +41,7 @@ export default function Process() {
       num: "04",
       title: "Persetujuan & Penandatanganan",
       desc: "Setelah desain, gambar kerja, dan RAB disetujui, kami membuat kesepakatan kerja yang jelas dan transparan.",
-      image: "https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?w=400&auto=format&fit=crop&q=80",
+      image: "https://images.unsplash.com/photo-1521791136064-7986c2920216?w=600&auto=format&fit=crop&q=80",
       icon: (
         <svg className="w-7 h-7 text-[#c5a880]" fill="none" stroke="currentColor" strokeWidth="1.8" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
           <path strokeLinecap="round" strokeLinejoin="round" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
@@ -50,7 +52,7 @@ export default function Process() {
       num: "05",
       title: "Pelaksanaan Pembangunan",
       desc: "Proyek dikerjakan oleh tim berpengalaman dengan pengawasan ketat dan laporan progres berkala.",
-      image: "https://images.unsplash.com/photo-1541888946425-d81bb19240f5?w=400&auto=format&fit=crop&q=80",
+      image: "https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=600&auto=format&fit=crop&q=80",
       icon: (
         <svg className="w-7 h-7 text-[#c5a880]" fill="none" stroke="currentColor" strokeWidth="1.8" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
           <path strokeLinecap="round" strokeLinejoin="round" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1M9 17h6" />
@@ -61,7 +63,7 @@ export default function Process() {
       num: "06",
       title: "Serah Terima & Garansi",
       desc: "Setelah selesai, kami lakukan serah terima pekerjaan dan memberikan garansi untuk ketenangan Anda.",
-      image: "/standard_house.png",
+      image: "https://images.unsplash.com/photo-1560440021-33f9b867899d?w=600&auto=format&fit=crop&q=80",
       icon: (
         <svg className="w-7 h-7 text-[#c5a880]" fill="none" stroke="currentColor" strokeWidth="1.8" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
           <path strokeLinecap="round" strokeLinejoin="round" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
@@ -188,10 +190,12 @@ export default function Process() {
 
                   {/* Photo Illustration */}
                   <div className="relative w-full aspect-[4/3] rounded-lg overflow-hidden mt-4 bg-gray-50 border border-gray-100 shrink-0">
-                    <img 
-                      src={step.image} 
-                      alt={step.title} 
-                      className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
+                    <Image
+                      src={step.image}
+                      alt={step.title}
+                      fill
+                      className="object-cover transition-transform duration-700 group-hover:scale-105"
+                      sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 17vw"
                     />
                   </div>
                 </div>

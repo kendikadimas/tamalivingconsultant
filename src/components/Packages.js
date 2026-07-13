@@ -7,7 +7,7 @@ export default function Packages() {
     {
       name: "BASIC",
       price: "Rp45.000",
-      image: "/basic_house.png",
+      image: "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=600&auto=format&fit=crop&q=80",
       features: [
         { text: "Denah / Layout", active: true },
         { text: "3D Eksterior", subtext: "(tampak depan, samping & belakang)", active: true },
@@ -17,7 +17,7 @@ export default function Packages() {
     {
       name: "STANDARD",
       price: "Rp65.000",
-      image: "/standard_house.png",
+      image: "https://images.unsplash.com/photo-1503387762-592deb58ef4e?w=600&auto=format&fit=crop&q=80",
       features: [
         { text: "Denah / Layout", active: true },
         { text: "3D Eksterior", subtext: "(tampak depan, samping & belakang)", active: true },
@@ -33,7 +33,7 @@ export default function Packages() {
     {
       name: "LENGKAP",
       price: "Rp80.000",
-      image: "/lengkap_house.png",
+      image: "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=600&auto=format&fit=crop&q=80",
       features: [
         { text: "Denah / Layout", active: true },
         { text: "3D Eksterior", subtext: "(tampak depan, samping & belakang)", active: true },
@@ -150,7 +150,7 @@ export default function Packages() {
                     src={pkg.image}
                     alt={`${pkg.name} Visual Render`}
                     fill
-                    sizes="(max-w-768px) 100vw, 33vw"
+                    sizes="(max-width: 1024px) 100vw, 33vw"
                     className="object-cover transition-transform duration-700 group-hover:scale-105"
                   />
                 </div>
