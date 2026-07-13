@@ -1,6 +1,23 @@
+"use client";
+
 import { PenLine, Ruler, Calculator, Hammer, ArrowRight } from "lucide-react";
+import { motion } from "framer-motion";
+import { useInView } from "framer-motion";
+import { useRef } from "react";
+
+const fadeUp = {
+  hidden: { opacity: 0, y: 28 },
+  show: (i = 0) => ({
+    opacity: 1,
+    y: 0,
+    transition: { duration: 0.55, ease: [0.22, 1, 0.36, 1], delay: i * 0.1 },
+  }),
+};
 
 export default function Services() {
+  const ref = useRef(null);
+  const isInView = useInView(ref, { once: true, margin: "-80px" });
+
   const services = [
     {
       title: "Desain Rumah",
@@ -33,10 +50,16 @@ export default function Services() {
     <section id="layanan" className="py-24 relative overflow-hidden">
       <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_left,rgba(30,77,53,0.1),transparent_40%)]" />
       
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10" ref={ref}>
         
         {/* Header */}
-        <div className="flex flex-col md:flex-row md:items-end justify-between mb-16 gap-6">
+        <motion.div
+          variants={fadeUp}
+          initial="hidden"
+          animate={isInView ? "show" : "hidden"}
+          custom={0}
+          className="flex flex-col md:flex-row md:items-end justify-between mb-16 gap-6"
+        >
           <div className="max-w-xl">
             <span className="text-brand-gold text-xs font-bold tracking-widest uppercase block mb-3">
               LAYANAN KAMI
@@ -51,13 +74,17 @@ export default function Services() {
               serta layanan pembangunan fisik secara khusus di daerah Sumatera Utara dan Solo Raya.
             </p>
           </div>
-        </div>
+        </motion.div>
 
         {/* Services Grid */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
           {services.map((service, index) => (
-            <div 
+            <motion.div
               key={index}
+              variants={fadeUp}
+              initial="hidden"
+              animate={isInView ? "show" : "hidden"}
+              custom={index + 1}
               className={`p-8 rounded-2xl border transition-all duration-300 group flex flex-col justify-between ${
                 service.highlight 
                   ? "bg-gradient-to-b from-brand-green-light to-brand-bg border-brand-gold/30 shadow-[0_4px_25px_rgba(212,175,55,0.05)]" 
@@ -102,7 +129,7 @@ export default function Services() {
                 Konsultasikan
                 <ArrowRight className="w-4 h-4 transition-transform group-hover/btn:translate-x-1" />
               </a>
-            </div>
+            </motion.div>
           ))}
         </div>
 

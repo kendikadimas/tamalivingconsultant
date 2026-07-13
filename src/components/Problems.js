@@ -2,8 +2,21 @@
 
 import Image from "next/image";
 import { ClipboardCheck, Receipt, ShieldCheck, Clock, Users, MessageCircle, FileText, Home, Quote, BadgeCheck } from "lucide-react";
+import { motion, useInView } from "framer-motion";
+import { useRef } from "react";
+
+const fadeUp = {
+  hidden: { opacity: 0, y: 28 },
+  show: (i = 0) => ({
+    opacity: 1,
+    y: 0,
+    transition: { duration: 0.55, ease: [0.22, 1, 0.36, 1], delay: i * 0.08 },
+  }),
+};
 
 export default function Problems() {
+  const ref = useRef(null);
+  const isInView = useInView(ref, { once: true, margin: "-80px" });
   const points = [
     {
       title: "Perencanaan Matang",
@@ -50,16 +63,20 @@ export default function Problems() {
   return (
     <section id="mengapa-kami" className="py-24 bg-[#f8f9f7] text-[#122e1f] relative overflow-hidden">
       
-      {/* Decorative blurred shape */}
       <div className="absolute top-0 right-0 w-[400px] h-[400px] bg-[#122e1f]/5 rounded-full filter blur-[120px] pointer-events-none" />
 
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10" ref={ref}>
         
         {/* Header Grid Layout */}
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center mb-16">
           
-          {/* Header Texts */}
-          <div className="lg:col-span-7">
+          <motion.div
+            variants={fadeUp}
+            initial="hidden"
+            animate={isInView ? "show" : "hidden"}
+            custom={0}
+            className="lg:col-span-7"
+          >
             <span className="text-[#c5a880] text-xs font-extrabold tracking-[0.2em] uppercase block">
               MENGAPA MEMILIH
             </span>
@@ -70,27 +87,36 @@ export default function Problems() {
             <p className="text-sm sm:text-base text-[#475b50] leading-relaxed max-w-xl font-body">
               Kami tidak hanya membangun rumah, tetapi memberikan <span className="font-extrabold text-[#122e1f]">ketenangan dan kepastian</span> bagi Anda dalam setiap prosesnya.
             </p>
-          </div>
+          </motion.div>
 
-          {/* Right Side Visual Cover Image */}
-          <div className="lg:col-span-5 relative w-full h-[220px] sm:h-[280px] lg:h-[310px] rounded-2xl overflow-hidden shadow-md">
+          <motion.div
+            variants={fadeUp}
+            initial="hidden"
+            animate={isInView ? "show" : "hidden"}
+            custom={1}
+            className="lg:col-span-5 relative w-full h-[220px] sm:h-[280px] lg:h-[310px] rounded-2xl overflow-hidden shadow-md"
+          >
             <Image
               src="/hero_house_ref.png"
               alt="Tama Living Premium Twilight Render"
               fill
-              sizes="(max-w-768px) 100vw, 40vw"
+              sizes="(max-width: 768px) 100vw, 40vw"
               className="object-cover"
               priority
             />
-          </div>
+          </motion.div>
 
         </div>
 
         {/* 8 USP Cards Grid */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5">
           {points.map((point, index) => (
-            <div 
+            <motion.div
               key={index}
+              variants={fadeUp}
+              initial="hidden"
+              animate={isInView ? "show" : "hidden"}
+              custom={index + 2}
               className="bg-white rounded-2xl border border-gray-200 p-5.5 flex gap-4 transition-all duration-300 hover:shadow-md hover:border-[#c5a880]/30 hover:-translate-y-0.5 group"
             >
               {/* Dark green square badge containing gold outlined icon */}
@@ -106,7 +132,7 @@ export default function Problems() {
                   {point.desc}
                 </p>
               </div>
-            </div>
+            </motion.div>
           ))}
         </div>
 
