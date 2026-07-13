@@ -135,9 +135,12 @@ export default function Packages() {
             >
               {/* Highlight Tag - Floating outside the container */}
               {pkg.highlight && pkg.tag && (
-                <div className="absolute top-0 left-1/2 -translate-x-1/2 -translate-y-1/2 bg-[#c5a880] text-white font-bold text-[9px] tracking-widest uppercase py-1 px-3.5 rounded-full flex items-center gap-1 shadow-md z-20">
-                  <Star className="w-3 h-3 text-white fill-current" />
-                  {pkg.tag}
+                <div
+                  aria-label={pkg.tag}
+                  className="absolute top-0 left-1/2 -translate-x-1/2 -translate-y-1/2 bg-[#c5a880] text-white font-bold text-[11px] tracking-widest uppercase py-1 px-3.5 rounded-full flex items-center gap-1 shadow-md z-20"
+                >
+                  <Star aria-hidden="true" className="w-3 h-3 text-white fill-current" />
+                  <span aria-hidden="true">{pkg.tag}</span>
                 </div>
               )}
 
@@ -155,8 +158,10 @@ export default function Packages() {
                 </div>
 
                 {/* Package Label Strip */}
-                <div className="bg-[#122e1f] text-white py-2 text-center font-serif text-[15px] font-bold tracking-widest uppercase">
-                  {pkg.name}
+                <div className="bg-[#122e1f] text-white py-2 text-center">
+                  <h3 className="font-serif text-[15px] font-bold tracking-widest uppercase">
+                    {pkg.name}
+                  </h3>
                 </div>
 
                 {/* Price Display - Reduced padding */}

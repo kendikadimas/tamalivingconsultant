@@ -22,12 +22,20 @@ export default function Navbar() {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
+  // Close drawer on Escape key
+  useEffect(() => {
+    const handleKeyDown = (e) => {
+      if (e.key === "Escape" && isOpen) setIsOpen(false);
+    };
+    document.addEventListener("keydown", handleKeyDown);
+    return () => document.removeEventListener("keydown", handleKeyDown);
+  }, [isOpen]);
+
   const navLinks = [
     { name: "Beranda", href: "#home" },
     { name: "Layanan", href: "#layanan" },
     { name: "Paket", href: "#paket-harga" },
     { name: "Proses", href: "#proses-kerja" },
-    { name: "Proyek", href: "#layanan" },
     { name: "Tentang Kami", href: "#mengapa-kami" },
     { name: "Kontak", href: "#konsultasi" },
   ];
@@ -91,13 +99,15 @@ export default function Navbar() {
           <div className="lg:hidden">
             <button
               onClick={() => setIsOpen(!isOpen)}
-              className="p-2 rounded-lg text-brand-text-muted hover:text-brand-gold hover:bg-brand-green-light/50 focus:outline-none transition-colors"
-              aria-label="Toggle Menu"
+              aria-label={isOpen ? "Tutup menu" : "Buka menu"}
+              aria-expanded={isOpen}
+              aria-controls="mobile-drawer"
+              className="p-2 rounded-lg text-brand-text-muted hover:text-brand-gold hover:bg-brand-green-light/50 transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand-gold focus-visible:ring-offset-2 focus-visible:ring-offset-brand-bg"
             >
               {isOpen ? (
-                <X className="h-6 w-6" />
+                <X className="h-6 w-6" aria-hidden="true" />
               ) : (
-                <Menu className="h-6 w-6" />
+                <Menu className="h-6 w-6" aria-hidden="true" />
               )}
             </button>
           </div>

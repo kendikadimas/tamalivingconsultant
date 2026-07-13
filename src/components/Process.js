@@ -174,10 +174,10 @@ export default function Process() {
                   {usp.icon}
                 </div>
                 <div>
-                  <h4 className="text-[11px] font-extrabold text-[#122e1f] uppercase tracking-wide">
+                  <h3 className="text-[11px] font-extrabold text-[#122e1f] uppercase tracking-wide">
                     {usp.title}
-                  </h4>
-                  <p className="text-[9px] text-[#475b50] font-semibold leading-tight mt-0.5 font-body">
+                  </h3>
+                  <p className="text-[11px] text-[#475b50] font-semibold leading-tight mt-0.5 font-body">
                     {usp.desc}
                   </p>
                 </div>

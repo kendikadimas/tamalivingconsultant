@@ -219,7 +219,7 @@ export default function Hero() {
             </div>
           </div>
           {/* Reviews Proof text */}
-          <p className="text-[#1c2e24] text-[12px] font-semibold leading-snug font-body">
+          <p className="text-[#f2f6f3] text-[12px] font-semibold leading-snug font-body">
             Lebih dari 100+ klien percaya dengan layanan Tama Living Construction
           </p>
         </div>

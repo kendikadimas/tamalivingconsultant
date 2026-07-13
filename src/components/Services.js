@@ -122,12 +122,13 @@ export default function Services() {
 
               <a 
                 href="#konsultasi"
-                className={`text-xs font-bold tracking-wider uppercase inline-flex items-center gap-2 group/btn w-fit mt-auto ${
+                aria-label={`Konsultasikan layanan ${service.title}`}
+                className={`text-xs font-bold tracking-wider uppercase inline-flex items-center gap-2 group/btn w-fit mt-auto min-h-[44px] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand-gold focus-visible:ring-offset-2 rounded ${
                   service.highlight ? "text-brand-gold-light" : "text-brand-text-muted hover:text-brand-gold"
                 }`}
               >
                 Konsultasikan
-                <ArrowRight className="w-4 h-4 transition-transform group-hover/btn:translate-x-1" />
+                <ArrowRight className="w-4 h-4 transition-transform group-hover/btn:translate-x-1" aria-hidden="true" />
               </a>
             </motion.div>
           ))}

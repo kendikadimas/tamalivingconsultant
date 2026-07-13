@@ -108,13 +108,15 @@ export default function Faq() {
                     className="bg-white rounded-2xl p-5.5 transition-all duration-300 border border-transparent shadow-[0_6px_25px_rgba(18,46,31,0.03)] hover:shadow-[0_12px_30px_rgba(197,168,128,0.12)] hover:border-[#c5a880]/20 hover:-translate-y-0.5 group"
                   >
                     <div>
-                      {/* Header row */}
-                      <div
+                      {/* Header row — native button for full keyboard + SR support */}
+                      <button
                         onClick={() => toggleFaq(index)}
-                        className="flex items-center justify-between gap-4 cursor-pointer"
+                        aria-expanded={isOpen}
+                        aria-controls={`faq-answer-${index}`}
+                        className="flex items-center justify-between gap-4 cursor-pointer w-full text-left focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#c5a880] focus-visible:ring-offset-2 rounded-lg"
                       >
                         <div className="flex items-center gap-3">
-                          <span className="w-8 h-8 rounded-full bg-[#c5a880]/10 border border-[#c5a880]/20 text-[#c5a880] flex items-center justify-center font-sans text-[11px] font-bold shrink-0 transition-all duration-300 group-hover:bg-[#c5a880] group-hover:text-white">
+                          <span aria-hidden="true" className="w-8 h-8 rounded-full bg-[#c5a880]/10 border border-[#c5a880]/20 text-[#c5a880] flex items-center justify-center font-sans text-[11px] font-bold shrink-0 transition-all duration-300 group-hover:bg-[#c5a880] group-hover:text-white">
                             {faq.num}
                           </span>
                           <h3 className="text-[12.5px] sm:text-[13.5px] font-extrabold text-[#122e1f] leading-snug group-hover:text-[#c5a880] transition-colors duration-200">
@@ -123,18 +125,20 @@ export default function Faq() {
                         </div>
                         
                         <motion.span
+                          aria-hidden="true"
                           animate={{ rotate: isOpen ? 180 : 0 }}
                           transition={{ duration: 0.3, ease: [0.22, 1, 0.36, 1] }}
                           className="w-6.5 h-6.5 rounded-full bg-[#c5a880]/10 border border-[#c5a880]/20 text-[#c5a880] flex items-center justify-center shrink-0 group-hover:bg-[#c5a880]/20"
                         >
                           <ChevronDown className="w-3.5 h-3.5" />
                         </motion.span>
-                      </div>
+                      </button>
 
                       {/* Animated content panel */}
                       <AnimatePresence initial={false}>
                         {isOpen && (
                           <motion.div
+                            id={`faq-answer-${index}`}
                             key="content"
                             initial={{ height: 0, opacity: 0 }}
                             animate={{ height: "auto", opacity: 1 }}
