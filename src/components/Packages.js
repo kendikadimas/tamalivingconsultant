@@ -237,9 +237,10 @@ export default function Packages() {
 
         {/* Bottom Details Panel (Payment & Timeline) */}
         <div className="bg-[#f0f3f0] rounded-2xl p-6 lg:p-8 border border-gray-200/50 max-w-5xl mx-auto mb-12 shadow-inner">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-14 items-start">
+          <div className="grid grid-cols-1 gap-10 items-start">
             
-            {/* Column 1 - Metode Pembayaran */}
+            {/* Column 1 - Metode Pembayaran (DIARSIPKAN) */}
+            {/* 
             <div>
               <div className="flex items-center gap-3.5 mb-6">
                 <div className="w-10 h-10 rounded-full bg-[#0e291b] text-[#c5a880] flex items-center justify-center shrink-0 border border-[#c5a880]/30 shadow-sm">
@@ -272,8 +273,9 @@ export default function Packages() {
                 ))}
               </div>
             </div>
+            */}
 
-            {/* Column 2 - Estimasi Pengerjaan */}
+            {/* Estimasi Pengerjaan */}
             <div>
               <div className="flex items-center gap-3.5 mb-6">
                 <div className="w-10 h-10 rounded-full bg-[#0e291b] text-[#c5a880] flex items-center justify-center shrink-0 border border-[#c5a880]/30 shadow-sm">
