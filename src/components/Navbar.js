@@ -106,9 +106,17 @@ export default function Navbar() {
         </div>
       </div>
 
+      {/* Mobile Drawer Overlay */}
+      {isOpen && (
+        <div
+          className="fixed inset-0 z-30 bg-black/50 lg:hidden"
+          onClick={() => setIsOpen(false)}
+        />
+      )}
+
       {/* Mobile Drawer */}
       <div
-        className={`fixed inset-y-0 right-0 z-40 w-72 max-w-sm glass-panel p-6 shadow-2xl transition-transform duration-300 ease-in-out transform lg:hidden border-l border-brand-gold/10 ${
+        className={`fixed inset-y-0 right-0 z-40 w-72 max-w-sm bg-[#0e1f17] p-6 shadow-2xl transition-transform duration-300 ease-in-out transform lg:hidden border-l border-brand-gold/10 ${
           isOpen ? "translate-x-0" : "translate-x-full"
         }`}
       >
