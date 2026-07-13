@@ -1,4 +1,5 @@
 import Image from "next/image";
+import { Facebook, Mail, MapPin, Phone } from "lucide-react";
 
 export default function Footer() {
   const currentYear = new Date().getFullYear();
@@ -68,9 +69,7 @@ export default function Footer() {
                 className="w-8 h-8 rounded-full bg-brand-green-light border border-brand-gold/15 flex items-center justify-center text-brand-text-muted hover:text-brand-gold hover:border-brand-gold transition-colors"
                 aria-label="Email"
               >
-                <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
-                </svg>
+                <Mail className="w-4 h-4" />
               </a>
             </div>
           </div>

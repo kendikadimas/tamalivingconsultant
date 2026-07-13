@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import { Smartphone, Mail, ArrowRight } from "lucide-react";
 
 export default function ConsultationForm() {
   const [formData, setFormData] = useState({
@@ -84,9 +85,7 @@ Saya mengirimkan formulir ini dari Landing Page PT Tama Living Construction. Ter
             <div className="flex flex-col gap-5">
               <div className="flex items-center gap-4 p-4 rounded-xl bg-brand-card/50 border border-brand-green-light/40">
                 <div className="w-10 h-10 rounded-lg bg-brand-gold/15 text-brand-gold flex items-center justify-center shrink-0">
-                  <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M12 18h.01M8 21h8a2 2 0 002-2V5a2 2 0 00-2-2H8a2 2 0 00-2 2v14a2 2 0 002 2z" />
-                  </svg>
+                  <Smartphone className="w-5 h-5" />
                 </div>
                 <div>
                   <div className="text-xs text-brand-text-muted">Hubungi Representative (Deviana)</div>
@@ -96,9 +95,7 @@ Saya mengirimkan formulir ini dari Landing Page PT Tama Living Construction. Ter
 
               <div className="flex items-center gap-4 p-4 rounded-xl bg-brand-card/50 border border-brand-green-light/40">
                 <div className="w-10 h-10 rounded-lg bg-brand-gold/15 text-brand-gold flex items-center justify-center shrink-0">
-                  <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
-                  </svg>
+                  <Mail className="w-5 h-5" />
                 </div>
                 <div>
                   <div className="text-xs text-brand-text-muted">Email Resmi PT.</div>
@@ -233,9 +230,7 @@ Saya mengirimkan formulir ini dari Landing Page PT Tama Living Construction. Ter
                   ) : (
                     <>
                       Kirim Ke WhatsApp Deviana
-                      <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M14 5l7 7m0 0l-7 7m7-7H3" />
-                      </svg>
+                      <ArrowRight className="w-4 h-4" />
                     </>
                   )}
                 </button>

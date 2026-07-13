@@ -1,6 +1,7 @@
 "use client";
 
 import Image from "next/image";
+import { Check, RotateCcw, Clock, Layers, FileBarChart, Star, LayoutGrid, Package, PenLine, ClipboardList } from "lucide-react";
 
 export default function Packages() {
   const packages = [
@@ -135,9 +136,7 @@ export default function Packages() {
               {/* Highlight Tag - Floating outside the container */}
               {pkg.highlight && pkg.tag && (
                 <div className="absolute top-0 left-1/2 -translate-x-1/2 -translate-y-1/2 bg-[#c5a880] text-white font-bold text-[9px] tracking-widest uppercase py-1 px-3.5 rounded-full flex items-center gap-1 shadow-md z-20">
-                  <svg className="w-3 h-3 text-white fill-current" viewBox="0 0 20 20">
-                    <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
-                  </svg>
+                  <Star className="w-3 h-3 text-white fill-current" />
                   {pkg.tag}
                 </div>
               )}
@@ -174,11 +173,9 @@ export default function Packages() {
                     <li key={fIndex} className="flex flex-col group/item cursor-default">
                       <div className="flex items-start gap-2.5">
                         {/* Vibrant Green Check Circle - Scaling on hover */}
-                        <span className="w-4.5 h-4.5 rounded-full bg-[#2e7d32] text-white flex items-center justify-center shrink-0 mt-0.5 shadow-sm transition-transform duration-300 group-hover/item:scale-110">
-                          <svg className="w-3 h-3" fill="none" stroke="currentColor" strokeWidth="3.5" viewBox="0 0 24 24">
-                            <path strokeLinecap="round" strokeLinejoin="round" d="M5 13l4 4L19 7" />
-                          </svg>
-                        </span>
+                         <span className="w-4.5 h-4.5 rounded-full bg-[#2e7d32] text-white flex items-center justify-center shrink-0 mt-0.5 shadow-sm transition-transform duration-300 group-hover/item:scale-110">
+                           <Check className="w-3 h-3" strokeWidth={3.5} />
+                         </span>
                         
                         <div className="flex flex-col">
                           <span className="text-[12px] sm:text-[13px] font-bold text-[#1c2e24] font-body leading-tight transition-colors duration-200 group-hover/item:text-[#c5a880]">
@@ -211,20 +208,7 @@ export default function Packages() {
               {/* Free Revision footer badge - Reduced padding */}
               <div className="px-5 pb-4.5 mt-auto">
                 <div className="py-2 rounded-lg border border-gray-200 bg-gray-50 flex items-center justify-center gap-1.5 transition-colors duration-300 hover:bg-[#122e1f]/5">
-                  <svg
-                    className="w-4 h-4 text-[#122e1f] shrink-0"
-                    fill="none"
-                    stroke="currentColor"
-                    strokeWidth="2.5"
-                    viewBox="0 0 24 24"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      d="M16.023 9.348h4.992v-.001M2.985 19.644v-4.992m0 0h4.992m-4.993 0l3.181 3.183a8.25 8.25 0 0013.803-3.7M4.031 9.865a8.25 8.25 0 0113.803-3.7l3.181 3.182m0-4.991v4.99"
-                    />
-                  </svg>
+                  <RotateCcw className="w-4 h-4 text-[#122e1f] shrink-0" />
                   <span className="text-[9.5px] font-extrabold text-[#122e1f] tracking-wider uppercase">
                     BEBAS REVISI SAMPAI TAHAP BERIKUTNYA
                   </span>
@@ -279,9 +263,7 @@ export default function Packages() {
             <div>
               <div className="flex items-center gap-3.5 mb-6">
                 <div className="w-10 h-10 rounded-full bg-[#0e291b] text-[#c5a880] flex items-center justify-center shrink-0 border border-[#c5a880]/30 shadow-sm">
-                  <svg className="w-4.5 h-4.5" fill="none" stroke="currentColor" strokeWidth="2.5" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
-                  </svg>
+                  <Clock className="w-4.5 h-4.5" />
                 </div>
                 <h3 className="font-serif text-sm font-extrabold tracking-wide uppercase">
                   ESTIMASI PENGERJAAN (HARI KERJA)
@@ -292,23 +274,13 @@ export default function Packages() {
                 {estimasi.map((item, idx) => {
                   const estimasiIcons = [
                     // Denah (layout/grid)
-                    <svg className="w-3.5 h-3.5" fill="none" stroke="currentColor" strokeWidth="2.5" viewBox="0 0 24 24" key="denah">
-                      <rect x="3" y="3" width="18" height="18" rx="1" />
-                      <path d="M9 3v18M3 9h18" />
-                    </svg>,
+                    <LayoutGrid className="w-3.5 h-3.5" key="denah" />,
                     // 3D Eksterior (3D cube)
-                    <svg className="w-3.5 h-3.5" fill="none" stroke="currentColor" strokeWidth="2.5" viewBox="0 0 24 24" key="3d">
-                      <path d="M21 16V8a2 2 0 00-1-1.73l-7-4a2 2 0 00-2 0l-7 4A2 2 0 003 8v8a2 2 0 001 1.73l7 4a2 2 0 002 0l7-4A2 2 0 0021 16z" />
-                      <path d="M3.27 6.96L12 12.01l8.73-5.05M12 22.08V12" />
-                    </svg>,
+                    <Package className="w-3.5 h-3.5" key="3d" />,
                     // Gambar Kerja & Detail (blueprint paper)
-                    <svg className="w-3.5 h-3.5" fill="none" stroke="currentColor" strokeWidth="2.5" viewBox="0 0 24 24" key="gambar">
-                      <path d="M17 3a2.828 2.828 0 114 4L7.5 20.5 2 22l1.5-5.5L17 3z" />
-                    </svg>,
+                    <PenLine className="w-3.5 h-3.5" key="gambar" />,
                     // RAB (calculator/invoice)
-                    <svg className="w-3.5 h-3.5" fill="none" stroke="currentColor" strokeWidth="2.5" viewBox="0 0 24 24" key="rab">
-                      <path d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-3 7h3m-3 4h3m-6-4h.01M9 16h.01" />
-                    </svg>
+                    <ClipboardList className="w-3.5 h-3.5" key="rab" />
                   ];
 
                   return (

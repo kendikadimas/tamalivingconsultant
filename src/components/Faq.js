@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import Image from "next/image";
+import { ChevronDown, Quote, MessageCircle, ShieldCheck, Clock } from "lucide-react";
 
 export default function Faq() {
   // Initialize with only the first item open to demonstrate interactivity,
@@ -103,9 +104,7 @@ export default function Faq() {
                         
                         {/* Premium Gold Ringed Chevron Toggle Icon */}
                         <span className={`w-6.5 h-6.5 rounded-full bg-[#c5a880]/10 border border-[#c5a880]/20 text-[#c5a880] flex items-center justify-center shrink-0 transition-all duration-300 group-hover:bg-[#c5a880]/20 ${isOpen ? "rotate-180" : ""}`}>
-                          <svg className="w-3.5 h-3.5" fill="none" stroke="currentColor" strokeWidth="2.5" viewBox="0 0 24 24">
-                            <path strokeLinecap="round" strokeLinejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" />
-                          </svg>
+                          <ChevronDown className="w-3.5 h-3.5" />
                         </span>
                       </div>
 
@@ -150,9 +149,7 @@ export default function Faq() {
                 {/* Quotation & Heading */}
                 <div className="mb-6">
                   <div className="w-10 h-10 rounded-full bg-[#0e291b] border border-[#c5a880]/30 text-[#c5a880] flex items-center justify-center shrink-0 mx-auto shadow-md mb-4">
-                    <svg className="w-4.5 h-4.5 fill-current" viewBox="0 0 24 24">
-                      <path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-10zm-12 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.154c-2.433.914-3.996 3.635-3.996 5.846h4v10h-10z" />
-                    </svg>
+                    <Quote className="w-4.5 h-4.5" />
                   </div>
                   
                   <h3 className="font-serif text-base sm:text-lg font-bold text-white mb-2 leading-snug">
@@ -185,9 +182,7 @@ export default function Faq() {
                   {/* Stat 1 */}
                   <div className="flex gap-2">
                     <span className="w-5 h-5 rounded-full bg-white/5 border border-white/10 text-[#c5a880] flex items-center justify-center shrink-0 mt-0.5">
-                      <svg className="w-3 h-3" fill="none" stroke="currentColor" strokeWidth="2.5" viewBox="0 0 24 24">
-                        <path strokeLinecap="round" strokeLinejoin="round" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
-                      </svg>
+                      <ShieldCheck className="w-3 h-3" />
                     </span>
                     <div className="flex flex-col">
                       <span className="text-[10px] font-extrabold text-white leading-none">100% Amanah</span>
@@ -198,9 +193,7 @@ export default function Faq() {
                   {/* Stat 2 */}
                   <div className="flex gap-2">
                     <span className="w-5 h-5 rounded-full bg-white/5 border border-white/10 text-[#c5a880] flex items-center justify-center shrink-0 mt-0.5">
-                      <svg className="w-3 h-3" fill="none" stroke="currentColor" strokeWidth="2.5" viewBox="0 0 24 24">
-                        <path strokeLinecap="round" strokeLinejoin="round" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
-                      </svg>
+                      <ShieldCheck className="w-3 h-3" />
                     </span>
                     <div className="flex flex-col">
                       <span className="text-[10px] font-extrabold text-white leading-none">6 Bulan Garansi</span>
@@ -211,9 +204,7 @@ export default function Faq() {
                   {/* Stat 3 */}
                   <div className="flex gap-2">
                     <span className="w-5 h-5 rounded-full bg-white/5 border border-white/10 text-[#c5a880] flex items-center justify-center shrink-0 mt-0.5">
-                      <svg className="w-3 h-3" fill="none" stroke="currentColor" strokeWidth="2.5" viewBox="0 0 24 24">
-                        <path strokeLinecap="round" strokeLinejoin="round" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
-                      </svg>
+                      <Clock className="w-3 h-3" />
                     </span>
                     <div className="flex flex-col">
                       <span className="text-[10px] font-extrabold text-white leading-none">1-30 Hari Desain</span>
@@ -224,9 +215,7 @@ export default function Faq() {
                   {/* Stat 4 */}
                   <div className="flex gap-2">
                     <span className="w-5 h-5 rounded-full bg-white/5 border border-white/10 text-[#c5a880] flex items-center justify-center shrink-0 mt-0.5">
-                      <svg className="w-3 h-3" fill="none" stroke="currentColor" strokeWidth="2.5" viewBox="0 0 24 24">
-                        <path strokeLinecap="round" strokeLinejoin="round" d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z" />
-                      </svg>
+                      <MessageCircle className="w-3 h-3" />
                     </span>
                     <div className="flex flex-col">
                       <span className="text-[10px] font-extrabold text-white leading-none">Konsultasi Gratis</span>
