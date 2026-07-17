@@ -1,3 +1,5 @@
+export const dynamic = "force-static";
+
 const siteUrl = "https://tamalivingconstruction.com";
 
 export default function sitemap() {
