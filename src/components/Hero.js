@@ -27,11 +27,11 @@ export default function Hero() {
           alt="Tama Living Construction Premium House"
           fill
           priority
-          className="object-cover object-right-bottom lg:object-right"
+          className="object-cover object-center lg:object-right"
         />
         {/* Gradients to fade image on left & bottom for high readability */}
         <div className="absolute inset-0 bg-gradient-to-r from-[#040d08] via-[#040d08]/90 via-[#040d08]/40 to-transparent z-10 hidden lg:block" />
-        <div className="absolute inset-0 bg-[#040d08]/75 z-10 lg:hidden" />
+        <div className="absolute inset-0 bg-gradient-to-r from-[#040d08]/95 via-[#040d08]/80 to-[#040d08]/30 z-10 lg:hidden" />
         <div className="absolute bottom-0 left-0 right-0 h-32 bg-gradient-to-t from-[#040d08] to-transparent z-10" />
       </div>
 
