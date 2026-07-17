@@ -53,7 +53,8 @@ export default function Navbar() {
   ];
 
   return (
-    <nav
+    <>
+      <nav
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
         isScrolled
           ? "bg-brand-bg/90 backdrop-blur-md py-3 shadow-lg border-b border-brand-gold/10"
@@ -136,6 +137,7 @@ export default function Navbar() {
 
         </div>
       </div>
+      </nav>
 
       {/* Mobile Drawer Overlay */}
       <AnimatePresence>
@@ -224,6 +226,6 @@ export default function Navbar() {
           </motion.div>
         )}
       </AnimatePresence>
-    </nav>
+    </>
   );
 }
