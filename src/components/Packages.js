@@ -85,7 +85,7 @@ export default function Packages() {
           <div className="flex justify-center items-center gap-2.5 mb-3.5">
             <div className="relative w-[26px] h-9 overflow-hidden shrink-0 invert opacity-85">
               <img
-                src="/logo-tamaliving.png"
+                src="/logo-tamaliving.webp"
                 alt="Logo Icon"
                 className="absolute left-0 top-0 h-full w-auto max-w-none object-left"
               />
@@ -136,11 +136,12 @@ export default function Packages() {
               {/* Highlight Tag - Floating outside the container */}
               {pkg.highlight && pkg.tag && (
                 <div
+                  role="img"
                   aria-label={pkg.tag}
                   className="absolute top-0 left-1/2 -translate-x-1/2 -translate-y-1/2 bg-[#c5a880] text-white font-bold text-[11px] tracking-widest uppercase py-1 px-3.5 rounded-full flex items-center gap-1 shadow-md z-20"
                 >
                   <Star aria-hidden="true" className="w-3 h-3 text-white fill-current" />
-                  <span aria-hidden="true">{pkg.tag}</span>
+                  <span>{pkg.tag}</span>
                 </div>
               )}
 
@@ -152,6 +153,7 @@ export default function Packages() {
                     src={pkg.image}
                     alt={`${pkg.name} Visual Render`}
                     fill
+                    loading="lazy"
                     sizes="(max-width: 1024px) 100vw, 33vw"
                     className="object-cover transition-transform duration-700 group-hover:scale-105"
                   />
@@ -166,7 +168,7 @@ export default function Packages() {
 
                 {/* Price Display - Reduced padding */}
                 <div className="text-center py-4.5 border-b border-gray-100 bg-[#fafbfa]">
-                  <span className="text-[#c5a880] font-serif text-2xl font-extrabold tracking-tight">
+                  <span className="text-[#9a7a4a] font-serif text-2xl font-extrabold tracking-tight">
                     {pkg.price}
                   </span>
                   <span className="text-[#475b50] font-body text-[11px] font-semibold">/m²</span>
@@ -304,7 +306,7 @@ export default function Packages() {
                       {/* Value with preceding gold dot */}
                       <div className="flex items-center gap-1.5 shrink-0 text-right">
                         <span className="w-1.2 h-1.2 rounded-full bg-[#c5a880]" />
-                        <span className="text-[10px] font-bold text-[#c5a880]">
+                        <span className="text-[10px] font-bold text-[#7a5c2e]">
                           {item.value}
                         </span>
                       </div>

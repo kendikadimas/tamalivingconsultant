@@ -23,7 +23,7 @@ export default function Hero() {
       {/* Background Image - Reference twilight house */}
       <div className="absolute inset-0 z-0">
         <Image
-          src="/hero_house_ref.png"
+          src="/hero_house_ref.webp"
           alt="Tama Living Construction Premium House"
           fill
           priority
@@ -137,7 +137,7 @@ export default function Hero() {
                 <div>
                   <h4 className="text-xs font-bold text-brand-text-light mb-1 uppercase tracking-wide">
                     Desain Profesional
-                  </h4>
+                  </p>
                   <p className="text-[11px] text-brand-text-muted leading-relaxed">
                     Hasil desain presisi sesuai kebutuhan & anggaran Anda
                   </p>
@@ -152,7 +152,7 @@ export default function Hero() {
                 <div>
                   <h4 className="text-xs font-bold text-brand-text-light mb-1 uppercase tracking-wide">
                     Proses Transparan
-                  </h4>
+                  </p>
                   <p className="text-[11px] text-brand-text-muted leading-relaxed">
                     Perencanaan jelas, biaya transparan, tanpa hidden cost
                   </p>
@@ -167,7 +167,7 @@ export default function Hero() {
                 <div>
                   <h4 className="text-xs font-bold text-brand-text-light mb-1 uppercase tracking-wide">
                     Pengerjaan Terarah
-                  </h4>
+                  </p>
                   <p className="text-[11px] text-brand-text-muted leading-relaxed">
                     Tim profesional dan berpengalaman di bidangnya
                   </p>
@@ -182,7 +182,7 @@ export default function Hero() {
                 <div>
                   <h4 className="text-xs font-bold text-brand-text-light mb-1 uppercase tracking-wide">
                     Legalitas Terjamin
-                  </h4>
+                  </p>
                   <p className="text-[11px] text-brand-text-muted leading-relaxed">
                     PT resmi berbadan hukum, amanah dan dapat dipercaya
                   </p>

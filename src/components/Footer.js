@@ -17,7 +17,7 @@ export default function Footer() {
             <a href="#home" className="flex items-center gap-3 w-fit mb-6">
               <div className="relative w-[26px] h-9 overflow-hidden shrink-0">
                 <img
-                  src="/logo-tamaliving.png"
+                  src="/logo-tamaliving.webp"
                   alt="Logo Icon"
                   className="absolute left-0 top-0 h-full w-auto max-w-none object-left"
                 />

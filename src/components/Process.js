@@ -95,9 +95,9 @@ export default function Process() {
         
         {/* Header */}
         <div className="text-center max-w-3xl mx-auto mb-16">
-          <span className="text-[#c5a880] text-xs font-extrabold tracking-[0.2em] uppercase block mb-3">
+          <p className="text-[#7a5c2e] text-xs font-extrabold tracking-[0.2em] uppercase block mb-3">
             PROSES KERJA KAMI
-          </span>
+          </p>
           <h2 className="font-sans text-3xl sm:text-4xl lg:text-[40px] font-extrabold text-[#122e1f] tracking-tight leading-tight">
             6 Langkah Mudah Bangun Rumah Impian Anda
           </h2>
