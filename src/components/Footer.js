@@ -157,10 +157,16 @@ export default function Footer() {
           <div>
             &copy; {currentYear} PT. Tama Living Construction. Hak Cipta Dilindungi.
           </div>
-          <div className="flex items-center gap-4">
-            <span className="hover:text-brand-gold transition-colors">Syarat & Ketentuan</span>
-            <span className="w-1.5 h-1.5 rounded-full bg-brand-green-light" />
-            <span className="hover:text-brand-gold transition-colors">Kebijakan Privasi</span>
+          <div className="flex items-center">
+            Developed by{" "}
+            <a 
+              href="https://kalanalabs.com" 
+              target="_blank" 
+              rel="noopener noreferrer" 
+              className="text-[#c5a880] hover:text-[#d6ba93] font-bold ml-1 transition-colors"
+            >
+              Kalana Labs
+            </a>
           </div>
         </div>
 
