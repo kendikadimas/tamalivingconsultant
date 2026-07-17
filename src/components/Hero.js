@@ -27,6 +27,7 @@ export default function Hero() {
           alt="Tama Living Construction Premium House"
           fill
           priority
+          sizes="(max-width: 768px) 100vw, 100vw"
           className="object-cover object-center lg:object-right"
         />
         {/* Gradients to fade image on left & bottom for high readability */}
@@ -135,11 +136,11 @@ export default function Hero() {
                   <Building2 className="w-5 h-5 text-brand-gold" />
                 </div>
                 <div>
-                  <h4 className="text-xs font-bold text-brand-text-light mb-1 uppercase tracking-wide">
+                  <p className="text-xs font-bold text-brand-text-light mb-1 uppercase tracking-wide">
                     Desain Profesional
                   </p>
                   <p className="text-[11px] text-brand-text-muted leading-relaxed">
-                    Hasil desain presisi sesuai kebutuhan & anggaran Anda
+                    Hasil desain presisi sesuai kebutuhan &amp; anggaran Anda
                   </p>
                 </div>
               </div>
@@ -150,7 +151,7 @@ export default function Hero() {
                   <ShieldCheck className="w-5 h-5 text-brand-gold" />
                 </div>
                 <div>
-                  <h4 className="text-xs font-bold text-brand-text-light mb-1 uppercase tracking-wide">
+                  <p className="text-xs font-bold text-brand-text-light mb-1 uppercase tracking-wide">
                     Proses Transparan
                   </p>
                   <p className="text-[11px] text-brand-text-muted leading-relaxed">
@@ -165,7 +166,7 @@ export default function Hero() {
                   <Users className="w-5 h-5 text-brand-gold" />
                 </div>
                 <div>
-                  <h4 className="text-xs font-bold text-brand-text-light mb-1 uppercase tracking-wide">
+                  <p className="text-xs font-bold text-brand-text-light mb-1 uppercase tracking-wide">
                     Pengerjaan Terarah
                   </p>
                   <p className="text-[11px] text-brand-text-muted leading-relaxed">
@@ -180,7 +181,7 @@ export default function Hero() {
                   <BadgeCheck className="w-5 h-5 text-brand-gold" />
                 </div>
                 <div>
-                  <h4 className="text-xs font-bold text-brand-text-light mb-1 uppercase tracking-wide">
+                  <p className="text-xs font-bold text-brand-text-light mb-1 uppercase tracking-wide">
                     Legalitas Terjamin
                   </p>
                   <p className="text-[11px] text-brand-text-muted leading-relaxed">
