@@ -8,7 +8,7 @@ export default function Packages() {
     {
       name: "BASIC",
       price: "Rp45.000",
-      image: "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=600&auto=format&fit=crop&q=80",
+      image: "https://images.unsplash.com/photo-1570129477492-45c003edd2be?w=600&auto=format&fit=crop&q=80",
       features: [
         { text: "Denah / Layout", active: true },
         { text: "3D Eksterior", subtext: "(tampak depan, samping & belakang)", active: true },
@@ -18,7 +18,7 @@ export default function Packages() {
     {
       name: "STANDARD",
       price: "Rp65.000",
-      image: "https://images.unsplash.com/photo-1503387762-592deb58ef4e?w=600&auto=format&fit=crop&q=80",
+      image: "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?w=600&auto=format&fit=crop&q=80",
       features: [
         { text: "Denah / Layout", active: true },
         { text: "3D Eksterior", subtext: "(tampak depan, samping & belakang)", active: true },
@@ -34,7 +34,7 @@ export default function Packages() {
     {
       name: "LENGKAP",
       price: "Rp80.000",
-      image: "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=600&auto=format&fit=crop&q=80",
+      image: "https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?w=600&auto=format&fit=crop&q=80",
       features: [
         { text: "Denah / Layout", active: true },
         { text: "3D Eksterior", subtext: "(tampak depan, samping & belakang)", active: true },

@@ -83,15 +83,25 @@ export default function Navbar() {
             ))}
           </div>
 
-          {/* Desktop CTA Button with WhatsApp Icon */}
-          <div className="hidden lg:block">
+          {/* Desktop CTA Buttons with WhatsApp Icon */}
+          <div className="hidden lg:flex items-center gap-3">
             <a
-              href="#konsultasi"
-              className="inline-flex items-center justify-center gap-2 px-6 py-2.5 rounded-full text-[13px] font-semibold bg-[#c5a880] text-brand-bg hover:bg-[#d6ba93] transition-all duration-300 shadow-md hover:shadow-lg"
+              href="https://wa.me/6281276200200"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center justify-center gap-2 px-5 py-2.5 rounded-full text-[12px] font-bold tracking-wide uppercase bg-[#c5a880] text-brand-bg hover:bg-[#d6ba93] transition-all duration-300 shadow-md hover:shadow-lg"
             >
-              {/* Custom WhatsApp Icon */}
               <FaWhatsapp className="w-4 h-4" />
-              Konsultasi Gratis
+              WA Devina
+            </a>
+            <a
+              href="#"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center justify-center gap-2 px-5 py-2.5 rounded-full text-[12px] font-bold tracking-wide uppercase bg-transparent border border-[#c5a880] text-[#c5a880] hover:bg-[#c5a880]/10 transition-all duration-300"
+            >
+              <FaWhatsapp className="w-4 h-4" />
+              WA Admin
             </a>
           </div>
 
@@ -170,17 +180,34 @@ export default function Navbar() {
                   {link.name}
                 </motion.a>
               ))}
-              <div className="h-px bg-brand-gold/10 my-4" />
-              <motion.a
-                href="#konsultasi"
-                onClick={() => setIsOpen(false)}
-                initial={{ opacity: 0, y: 10 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ delay: 0.45, duration: 0.3, ease: [0.22, 1, 0.36, 1] }}
-                className="inline-flex items-center justify-center w-full px-5 py-3 rounded-full text-xs font-bold tracking-widest uppercase bg-[#c5a880] text-brand-bg hover:bg-[#d6ba93] transition-all duration-300"
-              >
-                Konsultasi Gratis
-              </motion.a>
+              <div className="flex flex-col gap-3">
+                <motion.a
+                  href="https://wa.me/6281276200200"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  onClick={() => setIsOpen(false)}
+                  initial={{ opacity: 0, y: 10 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  transition={{ delay: 0.45, duration: 0.3, ease: [0.22, 1, 0.36, 1] }}
+                  className="inline-flex items-center justify-center w-full px-5 py-3 rounded-full text-xs font-bold tracking-widest uppercase bg-[#c5a880] text-brand-bg hover:bg-[#d6ba93] transition-all duration-300 gap-2"
+                >
+                  <FaWhatsapp className="w-4 h-4" />
+                  WA Devina
+                </motion.a>
+                <motion.a
+                  href="#"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  onClick={() => setIsOpen(false)}
+                  initial={{ opacity: 0, y: 10 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  transition={{ delay: 0.5, duration: 0.3, ease: [0.22, 1, 0.36, 1] }}
+                  className="inline-flex items-center justify-center w-full px-5 py-3 rounded-full text-xs font-bold tracking-widest uppercase bg-transparent border border-[#c5a880] text-[#c5a880] hover:bg-[#c5a880]/10 transition-all duration-300 gap-2"
+                >
+                  <FaWhatsapp className="w-4 h-4" />
+                  WA Admin
+                </motion.a>
+              </div>
             </div>
           </motion.div>
         )}

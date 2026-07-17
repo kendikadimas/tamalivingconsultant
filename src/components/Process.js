@@ -19,14 +19,14 @@ export default function Process() {
       num: "02",
       title: "Desain Konsep",
       desc: "Tim arsitek kami membuat konsep desain terbaik yang sesuai dengan kebutuhan, fungsi, dan gaya hidup Anda.",
-      image: "https://images.unsplash.com/photo-1607082348824-0a96f2a4b9da?w=600&auto=format&fit=crop&q=80",
+      image: "https://images.unsplash.com/photo-1503387762-592deb58ef4e?w=600&auto=format&fit=crop&q=80",
       icon: <PenTool className="w-7 h-7 text-[#c5a880]" />
     },
     {
       num: "03",
       title: "Gambar Kerja & RAB",
       desc: "Kami menyusun gambar kerja detail dan RAB yang akurat sebagai acuan pelaksanaan dan kontrol biaya.",
-      image: "https://images.unsplash.com/photo-1524758631624-e2822e304c36?w=600&auto=format&fit=crop&q=80",
+      image: "https://images.unsplash.com/photo-1542621334-a254cf47733d?w=600&auto=format&fit=crop&q=80",
       icon: <FileText className="w-7 h-7 text-[#c5a880]" />
     },
     {
@@ -40,7 +40,7 @@ export default function Process() {
       num: "05",
       title: "Pelaksanaan Pembangunan",
       desc: "Proyek dikerjakan oleh tim berpengalaman dengan pengawasan ketat dan laporan progres berkala.",
-      image: "https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=600&auto=format&fit=crop&q=80",
+      image: "https://images.unsplash.com/photo-1580587771525-78b9dba3b914?w=600&auto=format&fit=crop&q=80",
       icon: <HardHat className="w-7 h-7 text-[#c5a880]" />
     },
     {

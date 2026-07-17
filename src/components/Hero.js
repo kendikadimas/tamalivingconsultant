@@ -182,48 +182,7 @@ export default function Hero() {
         </div>
       </div>
 
-      {/* Bottom social proof strip */}
-      <motion.div
-        variants={fadeUp}
-        initial="hidden"
-        animate="show"
-        custom={4}
-        className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-20 w-full"
-      >
-        <div className="flex items-center gap-4 bg-white/5 backdrop-blur-sm border border-white/10 rounded-2xl px-5 py-3.5 w-fit">
-          {/* Avatar Group */}
-          <div className="flex items-center -space-x-2.5">
-            <div className="w-8 h-8 rounded-full border-2 border-white overflow-hidden z-10">
-              <img
-                src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=60&auto=format&fit=crop&q=85"
-                alt="Client Reviewer"
-                className="w-full h-full object-cover"
-              />
-            </div>
-            <div className="w-8 h-8 rounded-full border-2 border-white overflow-hidden z-20">
-              <img
-                src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=60&auto=format&fit=crop&q=85"
-                alt="Client Reviewer"
-                className="w-full h-full object-cover"
-              />
-            </div>
-            <div className="w-8 h-8 rounded-full border-2 border-white overflow-hidden -ml-2.5 z-20">
-              <img
-                src="https://images.unsplash.com/photo-1492562080023-ab3db95bfbce?w=60&auto=format&fit=crop&q=85"
-                alt="Client Reviewer"
-                className="w-full h-full object-cover"
-              />
-            </div>
-            <div className="w-8 h-8 rounded-full bg-[#c5a880] text-white text-[10px] font-bold flex items-center justify-center border-2 border-white -ml-2.5 z-30">
-              100+
-            </div>
-          </div>
-          {/* Reviews Proof text */}
-          <p className="text-[#f2f6f3] text-[12px] font-semibold leading-snug font-body">
-            Lebih dari 100+ klien percaya dengan layanan Tama Living Construction
-          </p>
-        </div>
-      </motion.div>
+
 
     </section>
   );
