@@ -22,6 +22,18 @@ export default function Navbar() {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
+  // Prevent body scroll when drawer is open
+  useEffect(() => {
+    if (isOpen) {
+      document.body.style.overflow = "hidden";
+    } else {
+      document.body.style.overflow = "unset";
+    }
+    return () => {
+      document.body.style.overflow = "unset";
+    };
+  }, [isOpen]);
+
   // Close drawer on Escape key
   useEffect(() => {
     const handleKeyDown = (e) => {
@@ -134,7 +146,7 @@ export default function Navbar() {
             animate={{ opacity: 1 }}
             exit={{ opacity: 0 }}
             transition={{ duration: 0.2 }}
-            className="fixed inset-0 z-30 bg-black/50 lg:hidden"
+            className="fixed inset-0 z-30 bg-black/40 backdrop-blur-sm lg:hidden"
             onClick={() => setIsOpen(false)}
           />
         )}
@@ -149,7 +161,7 @@ export default function Navbar() {
             animate={{ x: 0 }}
             exit={{ x: "100%" }}
             transition={{ duration: 0.3, ease: [0.22, 1, 0.36, 1] }}
-            className="fixed inset-y-0 right-0 z-40 w-72 max-w-sm bg-[#0e1f17] p-6 shadow-2xl lg:hidden border-l border-brand-gold/10"
+            className="fixed inset-y-0 right-0 z-40 w-72 max-w-sm bg-[#040d08]/80 backdrop-blur-xl p-6 shadow-2xl lg:hidden border-l border-brand-gold/10 overflow-y-auto"
           >
             <div className="flex items-center justify-between mb-8">
               <div className="flex items-center gap-2">
