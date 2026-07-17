@@ -40,16 +40,28 @@ export default function Hero() {
           
           {/* Main Hero Copy - Left Column */}
           <div className="lg:col-span-8 flex flex-col text-left">
-            <motion.h1
+            <motion.div
               variants={fadeUp}
               initial="hidden"
               animate="show"
               custom={0}
+              className="mb-4"
+            >
+              <span className="text-[#c5a880] text-[10px] sm:text-xs font-extrabold tracking-[0.2em] uppercase block">
+                Your Personal Homebuild Companion
+              </span>
+            </motion.div>
+
+            <motion.h1
+              variants={fadeUp}
+              initial="hidden"
+              animate="show"
+              custom={1}
               className="font-sans text-4xl sm:text-5xl lg:text-[56px] font-extrabold tracking-tight text-brand-text-light leading-[1.12] mb-6"
             >
-              Wujudkan <br />
-              <span className="text-[#c5a880]">Rumah Impian</span> <br />
-              Dengan Proses yang <br />
+              Wujudkan <br className="hidden sm:block" />
+              <span className="text-[#c5a880]">Rumah Impian</span> <br className="hidden sm:block" />
+              Dengan Proses yang <br className="hidden sm:block" />
               Terarah & Transparan
             </motion.h1>
 
@@ -57,7 +69,7 @@ export default function Hero() {
               variants={fadeUp}
               initial="hidden"
               animate="show"
-              custom={1}
+              custom={2}
               className="text-brand-text-muted text-sm sm:text-base max-w-xl mb-8 leading-relaxed font-body"
             >
               Tama Living Construction membantu Anda merancang dan membangun rumah tinggal mulai dari desain, gambar kerja, RAB, hingga pelaksanaan pembangunan.
@@ -68,13 +80,13 @@ export default function Hero() {
               variants={fadeUp}
               initial="hidden"
               animate="show"
-              custom={2}
-              className="flex flex-col sm:flex-row gap-4 mb-10 w-fit"
+              custom={3}
+              className="flex flex-col sm:flex-row gap-4 mb-10 w-full sm:w-fit"
             >
               {/* WhatsApp Button */}
               <a
                 href="#konsultasi"
-                className="px-6 py-3.5 rounded-xl bg-[#c5a880] text-[#040d08] hover:bg-[#d6ba93] transition-all duration-300 flex items-center gap-3.5 shadow-lg group cursor-pointer"
+                className="px-6 py-3.5 rounded-xl bg-[#c5a880] text-[#040d08] hover:bg-[#d6ba93] transition-all duration-300 flex items-center gap-3.5 shadow-lg group cursor-pointer w-full sm:w-auto"
               >
                 {/* WA Icon */}
                 <div className="w-8 h-8 rounded-full bg-brand-bg/10 flex items-center justify-center shrink-0">
@@ -93,7 +105,7 @@ export default function Hero() {
               {/* View Packages Button */}
               <a
                 href="#paket-harga"
-                className="px-6 py-3.5 rounded-xl border border-brand-gold/30 text-brand-text-light hover:border-brand-gold hover:bg-brand-gold/5 transition-all duration-300 flex items-center gap-3 cursor-pointer"
+                className="px-6 py-3.5 rounded-xl border border-brand-gold/30 text-brand-text-light hover:border-brand-gold hover:bg-brand-gold/5 transition-all duration-300 flex items-center gap-3 cursor-pointer w-full sm:w-auto"
               >
                 <div className="w-8 h-8 rounded-full bg-brand-gold/10 flex items-center justify-center shrink-0">
                   <FileText className="w-4 h-4 text-[#c5a880]" />
@@ -114,7 +126,7 @@ export default function Hero() {
               variants={fadeUp}
               initial="hidden"
               animate="show"
-              custom={3}
+              custom={4}
               className="grid grid-cols-2 gap-3 max-w-lg"
             >
               {/* USP 1 */}

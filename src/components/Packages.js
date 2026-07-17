@@ -8,7 +8,7 @@ export default function Packages() {
     {
       name: "BASIC",
       price: "Rp45.000",
-      image: "https://images.unsplash.com/photo-1570129477492-45c003edd2be?w=600&auto=format&fit=crop&q=80",
+      image: "/homedesign/TL-006-Kensington.webp",
       features: [
         { text: "Denah / Layout", active: true },
         { text: "3D Eksterior", subtext: "(tampak depan, samping & belakang)", active: true },
@@ -18,7 +18,7 @@ export default function Packages() {
     {
       name: "STANDARD",
       price: "Rp65.000",
-      image: "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?w=600&auto=format&fit=crop&q=80",
+      image: "/homedesign/TL-002-Aruna.webp",
       features: [
         { text: "Denah / Layout", active: true },
         { text: "3D Eksterior", subtext: "(tampak depan, samping & belakang)", active: true },
@@ -34,7 +34,7 @@ export default function Packages() {
     {
       name: "LENGKAP",
       price: "Rp80.000",
-      image: "https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?w=600&auto=format&fit=crop&q=80",
+      image: "/homedesign/TL-003-Altura.webp",
       features: [
         { text: "Denah / Layout", active: true },
         { text: "3D Eksterior", subtext: "(tampak depan, samping & belakang)", active: true },
@@ -109,7 +109,7 @@ export default function Packages() {
           </p>
 
           {/* Pricing warning notification banner */}
-          <div className="inline-block max-w-2xl bg-[#122e1f] border border-[#c5a880] rounded-full px-4.5 py-2 text-white shadow-md">
+          <div className="inline-block max-w-2xl bg-[#122e1f] border border-[#c5a880] rounded-xl sm:rounded-full px-4.5 py-2 text-white shadow-md mx-2 sm:mx-0">
             <div className="flex items-center justify-center gap-2 text-xs sm:text-[13px] font-bold uppercase tracking-wider">
               <div className="w-4.5 h-4.5 rounded-full bg-[#c5a880] text-[#122e1f] flex items-center justify-center shrink-0 font-sans text-xs">
                 i

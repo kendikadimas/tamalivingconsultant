@@ -95,7 +95,7 @@ export default function Navbar() {
               WA Devina
             </a>
             <a
-              href="#"
+              href="https://wa.me/6282230745446"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center justify-center gap-2 px-5 py-2.5 rounded-full text-[12px] font-bold tracking-wide uppercase bg-transparent border border-[#c5a880] text-[#c5a880] hover:bg-[#c5a880]/10 transition-all duration-300"
@@ -195,7 +195,7 @@ export default function Navbar() {
                   WA Devina
                 </motion.a>
                 <motion.a
-                  href="#"
+                  href="https://wa.me/6282230745446"
                   target="_blank"
                   rel="noopener noreferrer"
                   onClick={() => setIsOpen(false)}

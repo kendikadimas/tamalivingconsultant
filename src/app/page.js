@@ -7,6 +7,7 @@ import Process from "@/components/Process";
 import Faq from "@/components/Faq";
 import ConsultationForm from "@/components/ConsultationForm";
 import Footer from "@/components/Footer";
+import HomeDesignCollection from "@/components/HomeDesignCollection";
 
 const jsonLd = {
   "@context": "https://schema.org",
@@ -19,12 +20,11 @@ const jsonLd = {
       "url": "https://tamalivingconstruction.com",
       "logo": "https://tamalivingconstruction.com/logo-tamaliving.png",
       "image": "https://tamalivingconstruction.com/og-image.png",
-      "description": "Jasa Desain Rumah Profesional, Gambar Kerja, RAB, dan Pembangunan Terbaik di Sumatera Utara, Solo, dan Surakarta.",
+      "description": "Jasa Desain Rumah Profesional, Gambar Kerja, RAB, dan Pembangunan Terbaik di Sumatera Utara dan Solo (Surakarta).",
       "telephone": "+62",
       "areaServed": [
         { "@type": "State", "name": "Sumatera Utara" },
-        { "@type": "City", "name": "Solo" },
-        { "@type": "City", "name": "Surakarta" }
+        { "@type": "City", "name": "Solo (Surakarta)" }
       ],
       "serviceType": ["Desain Rumah", "Gambar Kerja", "RAB", "Bangun Rumah"],
       "priceRange": "Rp45.000 - Rp80.000 /m²",
@@ -59,7 +59,7 @@ const jsonLd = {
       "@id": "https://tamalivingconstruction.com/#service-bangun",
       "name": "Bangun Rumah",
       "provider": { "@id": "https://tamalivingconstruction.com/#business" },
-      "areaServed": ["Sumatera Utara", "Solo", "Surakarta"],
+      "areaServed": ["Sumatera Utara", "Solo (Surakarta)"],
       "description": "Pembangunan fisik rumah oleh tukang terlatih dengan pengawasan site manager profesional dan garansi pemeliharaan 6 bulan."
     }
   ]
@@ -89,6 +89,9 @@ export default function Home() {
 
         {/* Package Tiers */}
         <Packages />
+
+        {/* Home Design Collection */}
+        <HomeDesignCollection />
 
         {/* Project Lifecycle Process */}
         <Process />

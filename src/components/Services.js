@@ -39,8 +39,8 @@ export default function Services() {
     },
     {
       title: "Bangun Rumah",
-      area: "Sumatera Utara, Solo, Surakarta",
-      desc: "Pembangunan fisik rumah secara langsung di lapangan yang ditangani oleh tukang terlatih dan diawasi oleh site manager profesional. Pengerjaan presisi dengan garansi pemeliharaan 6 bulan.",
+      area: "Sumatera Utara dan Solo (Surakarta)",
+      desc: "Pembangunan fisik rumah secara langsung di lapangan yang ditangani oleh tukang terlatih dan diawasi oleh site manager profesional. Estimasi pengerjaan 3-6 bulan dengan garansi pemeliharaan 6 bulan.",
       icon: <Hammer className="w-8 h-8" />,
       highlight: true,
     },
@@ -71,7 +71,7 @@ export default function Services() {
           <div className="max-w-md">
             <p className="text-brand-text-muted text-sm sm:text-base font-body">
               Kami melayani perencanaan desain untuk klien di seluruh Indonesia, 
-              serta layanan pembangunan fisik secara khusus di daerah Sumatera Utara dan Solo Raya.
+              serta layanan pembangunan fisik secara khusus di daerah Sumatera Utara dan Solo (Surakarta).
             </p>
           </div>
         </motion.div>

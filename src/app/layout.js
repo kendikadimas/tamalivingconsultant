@@ -16,13 +16,13 @@ export const metadata = {
     template: "%s | Tama Living Construction",
   },
   description:
-    "Jasa Desain Rumah Profesional, Gambar Kerja, RAB, dan Pembangunan Terbaik di Sumatera Utara, Solo, dan Surakarta. Garansi pemeliharaan 6 bulan. Konsultasi gratis.",
+    "Jasa Desain Rumah Profesional, Gambar Kerja, RAB, dan Pembangunan Terbaik di Sumatera Utara dan Solo (Surakarta). Garansi pemeliharaan 6 bulan. Konsultasi gratis.",
   keywords: [
-    "desain rumah",
-    "bangun rumah",
-    "gambar kerja",
-    "RAB",
-    "bangun rumah Solo",
+    "jasa desain rumah",
+    "arsitek online",
+    "gambar kerja rumah",
+    "jasa RAB bangunan",
+    "bangun rumah Solo (Surakarta)",
     "bangun rumah Medan",
     "kontraktor Sumatera Utara",
     "Tama Living Construction",
@@ -53,7 +53,7 @@ export const metadata = {
     siteName: "Tama Living Construction",
     title: "PT Tama Living Construction | Jasa Desain & Bangun Rumah",
     description:
-      "Jasa Desain Rumah Profesional, Gambar Kerja, RAB, dan Pembangunan Terbaik di Sumatera Utara, Solo, dan Surakarta. Garansi pemeliharaan 6 bulan.",
+      "Jasa Desain Rumah Profesional, Gambar Kerja, RAB, dan Pembangunan Terbaik di Sumatera Utara dan Solo (Surakarta). Garansi pemeliharaan 6 bulan.",
     images: [
       {
         url: "/og-image.png",

@@ -32,8 +32,14 @@ export default function Footer() {
               </div>
             </a>
             
+            <div className="mb-4">
+              <span className="text-[#c5a880] text-[10px] font-extrabold tracking-[0.2em] uppercase block">
+                Your Personal Homebuild Companion
+              </span>
+            </div>
+
             <p className="text-brand-text-muted text-sm leading-relaxed font-body mb-6 max-w-sm">
-              PT. Tama Living Construction adalah perusahaan konstruksi profesional yang melayani jasa perancangan desain hunian secara nasional dan jasa pembangunan fisik rumah di Sumatera Utara dan Solo Raya.
+              PT. Tama Living Construction adalah perusahaan konstruksi profesional yang melayani jasa perancangan desain hunian secara nasional dan jasa pembangunan fisik rumah di Sumatera Utara dan Solo (Surakarta).
             </p>
 
             <div className="flex flex-col gap-3 mb-6">
@@ -43,7 +49,11 @@ export default function Footer() {
               </a>
               <a href="https://wa.me/6281276200200" target="_blank" rel="noopener noreferrer" className="flex items-center gap-3 text-sm text-brand-text-muted hover:text-brand-gold transition-colors w-fit">
                 <Phone className="w-4 h-4 text-brand-gold" />
-                <span>0812-7620-0200</span>
+                <span>0812-7620-0200 (Devina)</span>
+              </a>
+              <a href="https://wa.me/6282230745446" target="_blank" rel="noopener noreferrer" className="flex items-center gap-3 text-sm text-brand-text-muted hover:text-brand-gold transition-colors w-fit">
+                <Phone className="w-4 h-4 text-brand-gold" />
+                <span>0822-3074-5446 (Admin)</span>
               </a>
             </div>
 
@@ -134,7 +144,7 @@ export default function Footer() {
                   Jasa Pembangunan Fisik
                 </div>
                 <div className="text-sm text-brand-text-muted font-body">
-                  Sumatera Utara, Kota Solo, Kota Surakarta
+                  Sumatera Utara dan Solo (Surakarta)
                 </div>
               </div>
             </div>

@@ -36,7 +36,7 @@ export default function ConsultationForm() {
     e.preventDefault();
     setLoading(target);
 
-    const waNumber = target === 'devina' ? "6281276200200" : ""; // Admin WhatsApp number to be filled
+    const waNumber = target === 'devina' ? "6281276200200" : "6282230745446"; // Admin WhatsApp number
     const representativeName = target === 'devina' ? "Devina" : "Admin";
     
     // Formatting the WhatsApp Message
@@ -101,7 +101,7 @@ Saya mengirimkan formulir ini dari Landing Page PT Tama Living Construction. Ter
                 </div>
                 <div>
                   <div className="text-xs text-brand-text-muted">Hubungi Representative (Admin)</div>
-                  <div className="text-sm font-semibold text-brand-text-light">Nomor Menyusul</div>
+                  <div className="text-sm font-semibold text-brand-text-light">+62 822-3074-5446</div>
                 </div>
               </div>
 
