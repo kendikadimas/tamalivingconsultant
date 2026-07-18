@@ -99,7 +99,7 @@ export default function Navbar() {
           {/* Desktop CTA Buttons with WhatsApp Icon */}
           <div className="hidden lg:flex items-center gap-3">
             <a
-              href="https://wa.me/6281276200200"
+              href="https://wa.me/6282230745446"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center justify-center gap-2 px-5 py-2.5 rounded-full text-[12px] font-bold tracking-wide uppercase bg-[#c5a880] text-brand-bg hover:bg-[#d6ba93] transition-all duration-300 shadow-md hover:shadow-lg"
@@ -108,7 +108,7 @@ export default function Navbar() {
               WA Devina
             </a>
             <a
-              href="https://wa.me/6282230745446"
+              href="https://wa.me/6281276200200"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center justify-center gap-2 px-5 py-2.5 rounded-full text-[12px] font-bold tracking-wide uppercase bg-transparent border border-[#c5a880] text-[#c5a880] hover:bg-[#c5a880]/10 transition-all duration-300"
@@ -196,7 +196,7 @@ export default function Navbar() {
               ))}
               <div className="flex flex-col gap-3">
                 <motion.a
-                  href="https://wa.me/6281276200200"
+                  href="https://wa.me/6282230745446"
                   target="_blank"
                   rel="noopener noreferrer"
                   onClick={() => setIsOpen(false)}
@@ -209,7 +209,7 @@ export default function Navbar() {
                   WA Devina
                 </motion.a>
                 <motion.a
-                  href="https://wa.me/6282230745446"
+                  href="https://wa.me/6281276200200"
                   target="_blank"
                   rel="noopener noreferrer"
                   onClick={() => setIsOpen(false)}

@@ -47,13 +47,13 @@ export default function Footer() {
                 <Mail className="w-4 h-4 text-brand-gold" />
                 <span>pttamalivingconstruction@gmail.com</span>
               </a>
-              <a href="https://wa.me/6281276200200" target="_blank" rel="noopener noreferrer" className="flex items-center gap-3 text-sm text-brand-text-muted hover:text-brand-gold transition-colors w-fit">
-                <Phone className="w-4 h-4 text-brand-gold" />
-                <span>0812-7620-0200 (Devina)</span>
-              </a>
               <a href="https://wa.me/6282230745446" target="_blank" rel="noopener noreferrer" className="flex items-center gap-3 text-sm text-brand-text-muted hover:text-brand-gold transition-colors w-fit">
                 <Phone className="w-4 h-4 text-brand-gold" />
-                <span>0822-3074-5446 (Cahaya)</span>
+                <span>0822-3074-5446 (Devina)</span>
+              </a>
+              <a href="https://wa.me/6281276200200" target="_blank" rel="noopener noreferrer" className="flex items-center gap-3 text-sm text-brand-text-muted hover:text-brand-gold transition-colors w-fit">
+                <Phone className="w-4 h-4 text-brand-gold" />
+                <span>0812-7620-0200 (Cahaya)</span>
               </a>
             </div>
 

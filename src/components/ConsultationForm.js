@@ -36,8 +36,8 @@ export default function ConsultationForm() {
     e.preventDefault();
     setLoading(target);
 
-    const waNumber = target === 'devina' ? "6281276200200" : "6282230745446"; // Admin WhatsApp number
-    const representativeName = target === 'devina' ? "Devina" : "Admin";
+    const waNumber = target === 'devina' ? "6282230745446" : "6281276200200"; // Representative WhatsApp number
+    const representativeName = target === 'devina' ? "Devina" : "Cahaya";
     
     // Formatting the WhatsApp Message
     const formattedMessage = `Halo Kak ${representativeName}, saya ingin berkonsultasi mengenai pembangunan/desain rumah dengan rincian berikut:
@@ -91,7 +91,7 @@ Saya mengirimkan formulir ini dari Landing Page PT Tama Living Construction. Ter
                 </div>
                 <div>
                   <div className="text-xs text-brand-text-muted">Hubungi Representative (Devina)</div>
-                  <div className="text-sm font-semibold text-brand-text-light">+62 812-7620-0200</div>
+                  <div className="text-sm font-semibold text-brand-text-light">+62 822-3074-5446</div>
                 </div>
               </div>
 
@@ -101,7 +101,7 @@ Saya mengirimkan formulir ini dari Landing Page PT Tama Living Construction. Ter
                 </div>
                 <div>
                   <div className="text-xs text-brand-text-muted">Hubungi Representative (Cahaya)</div>
-                  <div className="text-sm font-semibold text-brand-text-light">+62 822-3074-5446</div>
+                  <div className="text-sm font-semibold text-brand-text-light">+62 812-7620-0200</div>
                 </div>
               </div>
 
@@ -251,14 +251,14 @@ Saya mengirimkan formulir ini dari Landing Page PT Tama Living Construction. Ter
                   <button
                     type="submit"
                     disabled={!!loading}
-                    onClick={() => setTarget('admin')}
+                    onClick={() => setTarget('cahaya')}
                     className="w-full py-4 rounded-xl bg-gradient-to-r from-brand-gold to-brand-gold-dark text-brand-bg font-bold text-xs tracking-widest uppercase transition-all duration-300 hover:from-brand-gold-light hover:to-brand-gold shadow-[0_4px_20px_rgba(212,175,55,0.2)] hover:shadow-[0_4px_25px_rgba(212,175,55,0.45)] transform hover:-translate-y-0.5 flex items-center justify-center gap-2 cursor-pointer disabled:opacity-50"
                   >
-                    {loading === 'admin' ? (
+                    {loading === 'cahaya' ? (
                       <span>Menghubungkan...</span>
                     ) : (
                       <>
-                        WhatsApp Admin
+                        WhatsApp Cahaya
                         <ArrowRight className="w-4 h-4" />
                       </>
                     )}
