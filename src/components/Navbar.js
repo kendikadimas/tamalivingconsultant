@@ -114,7 +114,7 @@ export default function Navbar() {
               className="inline-flex items-center justify-center gap-2 px-5 py-2.5 rounded-full text-[12px] font-bold tracking-wide uppercase bg-transparent border border-[#c5a880] text-[#c5a880] hover:bg-[#c5a880]/10 transition-all duration-300"
             >
               <FaWhatsapp className="w-4 h-4" />
-              WA Admin
+              WA Cahaya
             </a>
           </div>
 
@@ -219,7 +219,7 @@ export default function Navbar() {
                   className="inline-flex items-center justify-center w-full px-5 py-3 rounded-full text-xs font-bold tracking-widest uppercase bg-transparent border border-[#c5a880] text-[#c5a880] hover:bg-[#c5a880]/10 transition-all duration-300 gap-2"
                 >
                   <FaWhatsapp className="w-4 h-4" />
-                  WA Admin
+                  WA Cahaya
                 </motion.a>
               </div>
             </div>

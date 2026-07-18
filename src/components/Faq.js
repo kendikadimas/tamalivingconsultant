@@ -212,7 +212,7 @@ export default function Faq() {
                     className="w-full inline-flex items-center justify-center gap-2 py-3 px-5 rounded-xl bg-transparent border border-[#c5a880] hover:bg-[#c5a880]/10 text-[#c5a880] font-bold text-xs tracking-wider uppercase transition-all duration-300 hover:shadow-md cursor-pointer"
                   >
                     <FaWhatsapp className="w-4.5 h-4.5" />
-                    WHATSAPP ADMIN
+                    WHATSAPP CAHAYA
                   </a>
                 </div>
 

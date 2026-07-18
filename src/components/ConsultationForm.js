@@ -100,7 +100,7 @@ Saya mengirimkan formulir ini dari Landing Page PT Tama Living Construction. Ter
                   <Smartphone className="w-5 h-5" />
                 </div>
                 <div>
-                  <div className="text-xs text-brand-text-muted">Hubungi Representative (Admin)</div>
+                  <div className="text-xs text-brand-text-muted">Hubungi Representative (Cahaya)</div>
                   <div className="text-sm font-semibold text-brand-text-light">+62 822-3074-5446</div>
                 </div>
               </div>

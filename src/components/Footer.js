@@ -53,7 +53,7 @@ export default function Footer() {
               </a>
               <a href="https://wa.me/6282230745446" target="_blank" rel="noopener noreferrer" className="flex items-center gap-3 text-sm text-brand-text-muted hover:text-brand-gold transition-colors w-fit">
                 <Phone className="w-4 h-4 text-brand-gold" />
-                <span>0822-3074-5446 (Admin)</span>
+                <span>0822-3074-5446 (Cahaya)</span>
               </a>
             </div>
 
